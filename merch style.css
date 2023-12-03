@@ -1,0 +1,398 @@
+.container {
+	width: 100%;
+	height: 1125px;
+	margin: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	overflow: clip;
+	text-shadow: #FC0 1px 0 10px;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+	text-shadow: #FC0 1px 0 10px;
+}
+
+h1 {
+	font-size: 72px;
+	margin: 5;
+	text-shadow: #000 5px;
+	text-decoration: double;
+	-webkit-text-fill-color: rgb(239, 251, 251);
+	text-shadow: #FC0 3px 0 20px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 150px;
+	margin: 5;
+	text-shadow: #000 5px;
+	text-decoration: double;
+	-webkit-text-fill-color: rgb(239, 251, 251);
+	text-shadow: #FC0 3px 0 20px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.product {
+	width: 20%;
+	height: 10%;
+	background-color: #00000046;
+	color: #fff;
+	padding: 10px;
+	margin-left: 100px;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	background: #1111113a;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	transition: .5s;
+
+}
+
+.product:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	background-size: 100%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
+}
+
+.product:active {
+	color: #00000038
+}
+
+.product:active:after {
+	background: transparent;
+}
+
+.product:hover:before {
+	opacity: 1;
+}
+
+.product:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #11111112;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.product h2 {
+	margin-top: 0;
+	font-size: 28px;
+}
+
+p {
+	font-size: 72px;
+	margin: 5;
+	text-shadow: #000 5px;
+	text-decoration: double;
+	-webkit-text-fill-color: rgb(239, 251, 251);
+	text-shadow: #FC0 3px 0 20px;
+}
+
+.p1 {
+	font-size: 72px;
+	margin: 5;
+	text-shadow: #000 5px;
+	text-decoration: double;
+	-webkit-text-fill-color: rgb(239, 251, 251);
+	text-shadow: #FC0 3px 0 20px;
+	text-align: left;
+}
+
+.product img {
+	width: 100%;
+	height: 70%;
+	vertical-align: middle;
+}
+
+.interactive-window {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+
+.return {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 70px;
+	left: 90%;
+	font-size: 28px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.return:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
+}
+
+.return:active {
+	color: #000
+}
+
+.return:active:after {
+	background: transparent;
+}
+
+.return:hover:before {
+	opacity: 1;
+}
+
+.return:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.return {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 70px;
+	left: 90%;
+	font-size: 28px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.return:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
+}
+
+.return:active {
+	color: #000
+}
+
+.return:active:after {
+	background: transparent;
+}
+
+.return:hover:before {
+	opacity: 1;
+}
+
+.return:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.center_button {
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	height: 100px;
+	left: 0%;
+	font-size: 28px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.center_button:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
+}
+
+.center_button:active {
+	color: #000
+}
+
+.center_button:active:after {
+	background: transparent;
+}
+
+.center_button:hover:before {
+	opacity: 1;
+}
+
+.center_button:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.close-button {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	color: rgb(246, 2, 2);
+	font-size: 100px;
+	cursor: pointer;
+}
+
+body {
+	background: url(church.png);
+	background-size: cover;
+	transition: 2s ease;
+}
+
+/* Добавляем эффект движения при наведении на страницу */
+
+body:hover {
+	background-position: calc(5% - 2px) calc(5% - 2px);
+
+	/* на 2px отступ вправо и вниз */
+}
